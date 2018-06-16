@@ -6,6 +6,9 @@ import Header from './Header';
 import Footer from './Footer';
 
 import Main from './Main';
+import Workouts from './Workouts';
+import HealthAdvice from './HealthAdvice';
+import Recipes from './Recipes';
 
 function App() {
     return (
@@ -13,6 +16,9 @@ function App() {
             <Header />
             <Switch>
                 <Route exact path='/' component={Main} />
+                <Route path='/workouts' component={Workouts} />
+                <Route path='/health-advice' component={HealthAdvice} />
+                <Route path='/recipes' component={Recipes} />
             </Switch>
             <Footer />
         </div>

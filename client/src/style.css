@@ -8,13 +8,15 @@
     box-sizing: border-box;
     margin: 0;
     font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+
     /* font-size: 0; */
 }
 
 /* Header */
 
 .header {
-    font-family: 'Raleway', sans-serif;
     padding: 10px 0;
 }
 .brand a {
@@ -33,21 +35,114 @@
     right: 15px;
     top: 5px;
     font-size: 2em;
-    -webkit-font-smoothing: antialiased;
     cursor: pointer;
     color: #666;
     padding: 5px 0 10px 0;
 }
 
+/* MobileNav */
+
+.mobileNavHide {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    right: -100vw;
+    top: 0;
+    transition: .5s;
+    display: flex;
+}
+.mobileNavShow {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: .5s;
+    display: flex;
+}
+.mobileNavX {
+    /* position: fixed; */
+    width: 20vw;
+    height: 70px;
+    background: white;
+    cursor: pointer;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 3px;
+    padding-right: 2px;
+}
+.mobileNavItems {
+    background: #222531;
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+.blankItem {
+    height: 70px;
+    background: #323443;
+}
+.first {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+    background: #f1943b;
+    padding: 20px 0;
+}
+.mobileNavItem {
+    background: #222531;
+    color: #e5ebee;
+    text-decoration: none;
+    padding: 13px 50px;
+    text-transform: uppercase;
+}
+
 /* Main */
 
-.main {
-    background: #f19236;
-    padding-bottom: 100px;
-}
 .masthead {
     background-image: url('https://images.unsplash.com/photo-1485727749690-d091e8284ef3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6899720e88154132a7e65cb9b788ea00&auto=format&fit=crop&w=1400&q=80');
-    height: 500px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    height: 110vw;
+    background-position-y: -30px;
+    display: flex;
+    align-items: flex-end;
+}
+.mastheadText {
+    background: #21242f;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+    padding: 40px 20px;
+}
+.mastheadText > h1 {
+    font-size: 1em;
+}
+.subtext {
+    font-size: .6em;
+    line-height: 2.5;
+}
+@media (min-width: 768px) {
+    .masthead {
+        height: 800px;
+    }
+}
+.main > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.mainLink {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    background: #323443;
 }
