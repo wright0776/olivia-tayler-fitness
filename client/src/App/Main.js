@@ -1,5 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import MainLinks from './MainLinks';
+import InfoSection from './InfoSection';
+import MainAbout from './MainAbout';
+import Testimonials from './Testimonials';
 
 function Main() {
     return (
@@ -11,22 +14,10 @@ function Main() {
                     <span className='subtext'>Get your BIG BUM&trade; in shape!</span>
                 </div>
             </div>
-            <ul>
-                <li>
-                    <Link to='/workouts'>
-                        <div className='mainLink' >
-                            <h2>Workouts</h2>
-                            <span>Check out the latest workouts.</span>
-                        </div>
-                    </Link>
-                </li>
-                <li>
-                    <Link className='mainLink' to='/health-advice'>Workouts</Link>
-                </li>
-                <li>
-                    <Link className='mainLink' to='/recipes'>Workouts</Link>
-                </li>
-            </ul>
+           <MainLinks />
+           <InfoSection />
+           <MainAbout />
+           <Testimonials />
         </div>
     )
 }

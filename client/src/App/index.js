@@ -9,6 +9,7 @@ import Main from './Main';
 import Workouts from './Workouts';
 import HealthAdvice from './HealthAdvice';
 import Recipes from './Recipes';
+import About from './About';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path='/workouts' component={Workouts} />
                 <Route path='/health-advice' component={HealthAdvice} />
                 <Route path='/recipes' component={Recipes} />
+                <Route path='/about' component={About} />
             </Switch>
             <Footer />
         </div>

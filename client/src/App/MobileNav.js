@@ -15,6 +15,7 @@ class MobileNav extends Component {
                         <Link onClick={this.props.toggleNav} to='/workouts' className='mobileNavItem'>Workouts</Link>
                         <Link onClick={this.props.toggleNav} to='/health-advice' className='mobileNavItem'>Health Advice</Link>
                         <Link onClick={this.props.toggleNav} to='/recipes' className='mobileNavItem'>Recipes</Link>
+                        <Link onClick={this.props.toggleNav} to='/about' className='mobileNavItem'>About</Link>
                     </div>
                 </div>
             </div>
