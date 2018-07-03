@@ -3,6 +3,7 @@ import MainLinks from './MainLinks';
 import InfoSection from './InfoSection';
 import MainAbout from './MainAbout';
 import Testimonials from './Testimonials';
+import Ready from './Ready';
 
 function Main() {
     return (
@@ -18,6 +19,7 @@ function Main() {
            <InfoSection />
            <MainAbout />
            <Testimonials />
+           <Ready />
         </div>
     )
 }

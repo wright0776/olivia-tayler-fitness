@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MobileNav from './MobileNav';
+import './header.css';
 
 class Header extends Component {
     constructor(props) {

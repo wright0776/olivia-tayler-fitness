@@ -5,8 +5,8 @@ import {Switch, Route} from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
-import Main from './Main';
-import Workouts from './Workouts';
+import Main from './Main/';
+import Workouts from './WorkoutsPage/';
 import HealthAdvice from './HealthAdvice';
 import Recipes from './Recipes';
 import About from './About';
