@@ -3,6 +3,8 @@
 .header {
     padding: 10px 0;
     border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
 }
 .brand a {
     display: block;
@@ -23,6 +25,17 @@
     cursor: pointer;
     color: #666;
     padding: 5px 0 10px 0;
+}
+
+@media (min-width: 768px) {
+    .brand a {
+        height: 90px;
+        margin-left: 25px;
+    }
+    .burger {
+        right: 30px;
+        top: 25px;
+    }
 }
 
 /* MobileNav */

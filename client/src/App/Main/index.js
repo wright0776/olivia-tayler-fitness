@@ -4,6 +4,7 @@ import InfoSection from './InfoSection';
 import MainAbout from './MainAbout';
 import Testimonials from './Testimonials';
 import Ready from './Ready';
+import './main.css';
 
 function Main() {
     return (
