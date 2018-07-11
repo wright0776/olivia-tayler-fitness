@@ -1,0 +1,37 @@
+/* Main 'Ready' Section */
+
+.ready {
+    height: 200px;
+    background-image: linear-gradient(-225deg,#2eb7ce,#4296cb);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.ready p {
+    font-size: 120%;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.ready a {
+    width: 75%;
+    background: #212432;
+    padding: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+.ready a:hover {
+    background: linear-gradient(to right, #212432, #505879);
+}
+@media (min-width: 768px) {
+    .ready a {
+        width: 300px;
+        padding: 20px;
+        font-size: .9em;
+    }
+}

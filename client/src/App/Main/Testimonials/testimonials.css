@@ -1,0 +1,96 @@
+/* Testimonials */
+
+.testimonials {
+    background: #f2f6f6;
+    text-align: center;
+}
+.portrait {
+    content: '';
+    height: 140vw;
+    background-image: url('../../../media/otfitportrait2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width: 768px) {
+    .testimonials {
+        display: flex;
+    }
+    .portrait {
+        width: 45vw;
+        height: 500px;
+    }
+    .carousel-container {
+        width: 55vw;
+    }
+}
+.eyebrow-blue {
+    text-transform: uppercase;
+    padding: 50px;
+    font-size: 85%;
+    color: rgb(0, 153, 255);
+}
+.carousel-view {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0 15%;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    width: 100%;
+    padding: 0 15%;
+    /* flex-basis: inherit; */
+    flex-grow: 0;
+    flex-shrink: 0;
+    user-select: none;
+}
+.slide h2 {
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+.slide span {
+    font-size: 80%;
+    color: #666;
+    padding: 5px;
+}
+.carousel-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.pagination-circles-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 25px;
+}
+.circle-container {
+    height: 100%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.pagination-circle {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin: 10px;
+    background: #888;
+}
+.pagination-circle-active {
+    height: 12px;
+    width: 12px;
+    margin: 8px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid black;
+}

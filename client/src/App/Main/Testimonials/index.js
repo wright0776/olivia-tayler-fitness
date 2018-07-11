@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import SlideA from './slides/SlideA'
 import SlideB from './slides/SlideB'
 import SlideC from './slides/SlideC'
-import RightArrowNarrow from '../../icons/right-arrow-narrow.js'
-import LeftArrowNarrow from '../../icons/left-arrow-narrow'
+import RightArrowNarrow from '../../../icons/right-arrow-narrow.js'
+import LeftArrowNarrow from '../../../icons/left-arrow-narrow'
+import './testimonials.css'
 
 class Testimonials extends Component {
     constructor(props) {
@@ -60,37 +61,39 @@ class Testimonials extends Component {
         return (
             <div className='testimonials'>
                 <div className='portrait'></div>
-                <div className='eyebrow-blue'>Testimonials</div>
-                <div className='carousel-view'>
-                    <div style={this.state.currentSlide} className='slides'>
-                        <SlideA />
-                        <SlideB />
-                        <SlideC />
-                    </div>
-                </div>
-                <div className='carousel-pagination'>
-                    <div onClick={() => this.backSlide(this.state.currentSlide.transform)}>
-                        <LeftArrowNarrow />
-                    </div>
-                    <div className='pagination-circles-container'>
-                        <div id="a" onClick={() => this.viewedSlide("a")} className='circle-container'>
-                            {nav === "a" ?
-                                <div className='pagination-circle-active'></div> :
-                                <div className='pagination-circle'></div>}
-                        </div>
-                        <div id="b" onClick={() => this.viewedSlide("b")} className='circle-container'>
-                            {nav === "b" ?
-                                <div className='pagination-circle-active'></div> :
-                                <div className='pagination-circle'></div>}
-                        </div>
-                        <div id="c" onClick={() => this.viewedSlide("c")} className='circle-container'>
-                            {nav === "c" ?
-                                <div className='pagination-circle-active'></div> :
-                                <div className='pagination-circle'></div>}
+                <div className='carousel-container'>
+                    <div className='eyebrow-blue'>Testimonials</div>
+                    <div className='carousel-view'>
+                        <div style={this.state.currentSlide} className='slides'>
+                            <SlideA />
+                            <SlideB />
+                            <SlideC />
                         </div>
                     </div>
-                    <div onClick={() => this.forwardSlide(this.state.currentSlide.transform)}>
-                        <RightArrowNarrow />
+                    <div className='carousel-pagination'>
+                        <div onClick={() => this.backSlide(this.state.currentSlide.transform)}>
+                            <LeftArrowNarrow />
+                        </div>
+                        <div className='pagination-circles-container'>
+                            <div id="a" onClick={() => this.viewedSlide("a")} className='circle-container'>
+                                {nav === "a" ?
+                                    <div className='pagination-circle-active'></div> :
+                                    <div className='pagination-circle'></div>}
+                            </div>
+                            <div id="b" onClick={() => this.viewedSlide("b")} className='circle-container'>
+                                {nav === "b" ?
+                                    <div className='pagination-circle-active'></div> :
+                                    <div className='pagination-circle'></div>}
+                            </div>
+                            <div id="c" onClick={() => this.viewedSlide("c")} className='circle-container'>
+                                {nav === "c" ?
+                                    <div className='pagination-circle-active'></div> :
+                                    <div className='pagination-circle'></div>}
+                            </div>
+                        </div>
+                        <div onClick={() => this.forwardSlide(this.state.currentSlide.transform)}>
+                            <RightArrowNarrow />
+                        </div>
                     </div>
                 </div>
             </div>
