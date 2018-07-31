@@ -21,7 +21,6 @@ function About() {
                 <li>A normal human spine has 33 vertebrae when the bones that form the coccyx are counted individually</li>
                 <li>33 is, according to the Newton scale, the temperature at which water boils.</li>
             </ul>
-            <p style={{padding: "0 20px 20px 20px"}}>You're welcome</p>
             <h2 className='comingSoon'>MORE COMING SOON!</h2>
         </div>
     )
