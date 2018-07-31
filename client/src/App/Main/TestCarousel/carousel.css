@@ -1,0 +1,17 @@
+/* TestCarousel */
+
+.otfitPortrait {
+    height: 100%;
+}
+
+.carouselContainer {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background: #000;
+}
+
+.carousel {
+    height: 100%;
+    width: 500px;
+}

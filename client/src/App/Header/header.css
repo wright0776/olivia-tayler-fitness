@@ -9,7 +9,7 @@
 .brand a {
     display: block;
     text-indent: -9999px;
-    background-image: url('../../media//otFitBrand2.png');
+    background-image: url('../../media/otFitBrand2.png');
     background-attachment: scroll;
     background-position: center;
     background-size: contain;
@@ -25,6 +25,7 @@
     cursor: pointer;
     color: #666;
     padding: 5px 0 10px 0;
+    border: none;
 }
 
 @media (min-width: 768px) {
@@ -59,7 +60,6 @@
     display: flex;
 }
 .mobileNavX {
-    /* position: fixed; */
     width: 20vw;
     height: 70px;
     background: white;
@@ -85,8 +85,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 250px;
-    /* background: #f1943b; */
+    /* height: 250px; */
     padding: 20px 0;
 }
 .mobileNavItem {
@@ -94,4 +93,46 @@
     color: #e5ebee;
     padding: 13px 50px;
     text-transform: uppercase;
+}
+.standardNav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .blankItem {
+        height:110px;
+    }
+    .mobileNavX {
+        height: 110px;
+        font-size: 5em;
+    }
+    .first {
+        padding: 40px 0;
+    }
+    .mobileNavItem {
+        padding: 20px 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .burger {
+        display: none;
+    }
+    .header {
+        justify-content: center;
+        width: 100%;
+    }
+    .brand a {
+        margin: 0 50px 0 0;
+    }
+    .standardNav {
+        display: flex;
+        margin-left: 200px;
+    }
+    .standardNavLink {
+        padding: 10px;
+        margin: 0 20px;
+        font-size: 120%;
+        color: #333333;
+    }
 }

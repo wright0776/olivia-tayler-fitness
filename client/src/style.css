@@ -19,7 +19,19 @@ a {
 /* Footer */
 
 .footer {
-    height: 100vh;
     background: #21242f;
     color: white;
+    padding: 20px;
+}
+
+/* COMING SOON BANNER */
+
+.comingSoon {
+    width: 100%;
+    background-color: #21242f;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
 }

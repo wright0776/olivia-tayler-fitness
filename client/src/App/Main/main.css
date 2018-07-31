@@ -31,13 +31,31 @@
     font-size: .6em;
     line-height: 2.5;
 }
+.otfitPhoto {
+    display: none;
+}
 @media (min-width: 768px) {
     .masthead {
         height: 500px;
+        background-size: cover;
+        background-position: center;
     }
     .mastheadText {
         background: transparent;
-
+    }
+}
+@media (min-width: 1024px) {
+    .masthead {
+        background: linear-gradient(120deg, #EAF2FB, #94A4BB, #475970);
+        justify-content: center;    
+    }
+    .otfitPhoto {
+        display: block;
+        height: 500px;
+    }
+    .mastheadText {
+        height: 500px;
+        width: 500px;
     }
 }
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MobileNav from './MobileNav';
+import StandardNav from './StandardNav';
 import './header.css';
 
 class Header extends Component {
@@ -22,8 +23,9 @@ class Header extends Component {
                 <h1 className='brand'>
                     <Link to="/">Olivia Tayler Fitness</Link>
                 </h1>
-                <div onClick={this.toggleNav} className='burger'>☰</div>
+                <button onClick={this.toggleNav} className='burger'>☰</button>
                 <MobileNav toggleNav={this.toggleNav} mobileNav={this.state.mobileNav} />
+                <StandardNav />
             </div>
         )
     }
