@@ -13,7 +13,7 @@ class TestCarousel extends Component {
                     <div>
                         <img src="https://source.unsplash.com/NodtnCsLdTE/500x500/" alt="" />
                         <p className='legend'>
-                            "Olivia helped me get my self confidence back. I look great and I feel even better! I can't imagine my life without it."
+                            "Olivia's classes helped me get my self confidence back. I look great and I feel even better! I can't imagine my life without them."
                     {/* <span>Kitty G.</span> */}
                         </p>
                     </div>
