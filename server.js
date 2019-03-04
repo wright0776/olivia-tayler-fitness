@@ -15,21 +15,18 @@ app.use(bodyParser.json());
 // fixes paths when deployed
 app.use(express.static(path.join(__dirname, "client", "build")))
 
+// tells mongoose to use the native promise object
+mongoose.Promise = global.Promise;
+
 // connect to db
-mongoose.Promise = global.Promise; // tells mongoose to use the native promise object
-mongoose.connect(db,
-    {useMongoClient: true}, // helps get rid of depricated warnings
-    (err) => {
-        if (err) throw err;
-        console.log("Connected to the database");
-    }
-);
+mongoose.connect(db,{useNewUrlParser: true})
+.then(()=> console.log("Connected to MongoDB"))
+.catch(err => console.error(err));
 
 // routes
 app.use("/api", expressJwt({secret: process.env.SECRET})); // make the app use the express-jwt authentication middleware for anything starting with "/api"
-app.use("/api/workout", require("./routes/workout"));
-app.use("/api/profile", require("./routes/profile"));
-
+// app.use("/api/workout", require("./routes/workout"));
+// app.use("/api/profile", require("./routes/profile"));
 app.use("/auth", require("./routes/auth"));
 
 // fixes paths when deployed

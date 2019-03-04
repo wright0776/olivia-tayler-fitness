@@ -1,0 +1,58 @@
+.loginComponent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #777;
+}
+
+.loginForm {
+  height: 300px;
+  width: 350px;
+  background-color: #F29E42;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.loginTitle {
+  font-size: 250%;
+}
+
+.loginInputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginInputs > input {
+  height: 42px;
+  width: 326px;
+  border: 1px solid #ababab;
+  outline: none;
+  margin-bottom: 12px;
+  padding: 8px 16px;
+  font-size: 90%;
+  color: #777;
+  border-radius: 3px;
+}
+
+.loginInputs > input::placeholder {
+  color: #ababab;
+}
+
+.signInButton {
+  padding: 0 6px 0 6px;
+  margin: 6px 8px 6px 8px;
+  width: 326px;
+  height: 36px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
