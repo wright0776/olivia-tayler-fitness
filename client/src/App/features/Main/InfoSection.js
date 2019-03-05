@@ -21,7 +21,7 @@ function InfoSection() {
             <section className='info-section'>
                 <h3>Have fun while learning.</h3>
                 <p>Kids learn about fun topics while moving through class to create an active learning environment.</p>
-                <Link className='info-link' to='/recipes'>
+                <Link className='info-link' to='/class-schedule'>
                     {/* See some of the topics */}
                     View the class schedule
                </Link>
