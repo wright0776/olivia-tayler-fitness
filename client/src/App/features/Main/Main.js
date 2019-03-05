@@ -16,7 +16,7 @@ function Main() {
            <InfoSection />
            <MainAbout />
            {/* <Testimonials /> */}
-           <TestCarousel />
+           {/* <TestCarousel /> */}
            <Ready />
         </div>
     )
