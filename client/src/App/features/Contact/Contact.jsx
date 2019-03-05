@@ -3,9 +3,13 @@ import './contact.css';
 
 function Contact() {
     return (
-        <div className='contact'>
+        <div className='feature'>
             <h2 className='title'>Contact</h2>
-            <h2 className='comingSoon'>COMING SOON!</h2>
+            <div className='contactItems'>
+                <span>Olivia Wright</span>
+                <span>801.755.1678</span>
+                <span>oliviataylerfit@gmail.com</span>
+            </div>
         </div>
     )
 }

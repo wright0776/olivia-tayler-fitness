@@ -8,9 +8,7 @@ import Footer from './static/Footer/Footer';
 import Main from './features/Main/Main';
 import AboutMe from './features/AboutMe/AboutMe';
 import ClassSchedule from './features/ClassSchedule/ClassSchedule';
-import BirthdayParties from './features/BirthdayParties/BirthdayParties';
-import MyEvents from './features/MyEvents/MyEvents';
-import Friday from './features/Friday/Friday';
+import ServicesOffered from './features/ServicesOffered/ServicesOffered';
 import Contact from './features/Contact/Contact';
 import Login from './admin/Login/Login';
 
@@ -22,9 +20,7 @@ function App() {
                 <Route exact path='/' component={Main} />
                 <Route path='/about-me' component={AboutMe} />
                 <Route path='/class-schedule' component={ClassSchedule} />
-                <Route path='/birthday-parties' component={BirthdayParties} />
-                <Route path='/my-events' component={MyEvents} />
-                <Route path='/friday' component={Friday} />
+                <Route path='/services-offered' component={ServicesOffered} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/login' component={Login} />
             </Switch>

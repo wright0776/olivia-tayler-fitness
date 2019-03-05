@@ -69,18 +69,18 @@
     padding: 0;
 }
 .main-link {
-    color: #333;
+    color: #fff;
     position: relative;
-    background: rgb(228, 219, 210);
+    background: #777;
     padding: 35px;
     display: flex;
     flex-direction: column;
-    border-top: 1px solid #C5BDB5;
+    border-top: 1px solid #999;
     text-align: center;
     line-height: 1.5;
 }
 .main-link:hover {
-    background: rgb(207, 198, 190);
+    background: #888;
 }
 .main-link span {
     margin-left: 6px;
@@ -91,7 +91,7 @@
     margin-bottom: 5px;
 }
 .right-arrow {
-    color: #C16552;
+    color: #F9F9D5;
 }
 
 /* Info Section */

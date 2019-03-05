@@ -5,7 +5,7 @@ function MainLinks() {
     return (
         <ul className='main-links'>
             <li>
-                <Link to='/workouts'>
+                <Link to='/class-schedule'>
                     <div className='main-link' >
                         <h2>Class Schedule</h2>
                         <p>
@@ -16,7 +16,7 @@ function MainLinks() {
                 </Link>
             </li>
             <li>
-                <Link to='/health-advice'>
+                <Link to='/contact'>
                     <div className='main-link'>
                         <h2>Birthday Parties</h2>
                         <p>
@@ -27,11 +27,11 @@ function MainLinks() {
                 </Link>
             </li>
             <li>
-                <Link to='/recipes'>
+                <Link to='/services-offered'>
                     <div className='main-link'>
                         <h2>My Events</h2>
                         <p>
-                            Check out special events I am teaching at
+                            Check out my services offered
                             <span className='right-arrow'>&rarr;</span>
                         </p>
                     </div>
