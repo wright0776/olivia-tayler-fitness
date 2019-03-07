@@ -1,0 +1,35 @@
+.aboutMe {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+}
+
+.oliviaPortrait {
+  height: 375px;
+  width: 100%;
+  background: url('../../../media/oliviaPortrait.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: blueviolet; */
+}
+
+.aboutMeParagraph {
+  line-height: 36px;
+  font-size: 130%;
+}
+
+@media (min-width: 1024px) {
+  .aboutMe {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 48px;
+  }
+  
+  .oliviaPortrait {
+    /* height: 600px; */
+    height: 50vw;
+    max-height: 1000px;
+    width: 100%;
+  }
+}
