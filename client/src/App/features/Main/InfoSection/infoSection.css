@@ -1,0 +1,28 @@
+/* Info Section */
+
+.info-section:nth-child(1) {
+  border-bottom: 1px solid #e8eaf3;
+  box-shadow: inset 0 -1px 1px #e8eaf3;
+}
+
+.info-section:nth-child(2) {
+  border-bottom: 1px solid #e8eaf3;
+  box-shadow: inset 0 -1px 1px #e8eaf3;
+}
+
+.info-section {
+  padding: 50px;
+  text-align: center;
+  line-height: 1.5;
+}
+.info-section > * {
+  padding-bottom: 25px;
+}
+.info-section > h3 {
+  font-size: 150%;
+}
+.info-link {
+  color: #DD6F2C;
+  font-size: 90%;
+  font-weight: 600;
+}

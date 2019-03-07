@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import './infoSection.css';
 
 function InfoSection() {
     return (
@@ -22,7 +23,6 @@ function InfoSection() {
                 <h3>Have fun while learning.</h3>
                 <p>Kids learn about fun topics while moving through class to create an active learning environment.</p>
                 <Link className='info-link' to='/class-schedule'>
-                    {/* See some of the topics */}
                     View the class schedule
                </Link>
             </section>
@@ -30,4 +30,4 @@ function InfoSection() {
     )
 }
 
-export default InfoSection
+export default InfoSection;

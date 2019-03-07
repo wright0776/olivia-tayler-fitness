@@ -2,7 +2,7 @@
 
 .ready {
     height: 200px;
-    background-image: linear-gradient(-225deg,#F9F9D5,#F8CF67);
+    background: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;

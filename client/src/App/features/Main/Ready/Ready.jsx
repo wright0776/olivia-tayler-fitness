@@ -5,7 +5,7 @@ import './ready.css';
 function Ready() {
     return (
         <div className='ready'>
-            <p>Ready to try a class?</p>
+            <p>Ready to try a free class?</p>
             <Link to='/class-schedule'>get started today</Link>
         </div>
     )

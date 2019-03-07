@@ -1,0 +1,34 @@
+/* Main About */
+
+.whySection {
+    padding: 50px 20px;
+    text-align: center;
+    background: #F29E42;
+}
+
+.whySection > .heading {
+    color: #000;
+    padding-bottom: 40px;
+    line-height: 1.5;
+}
+
+.whyCause {
+    margin: 24px 0;
+    font-size: 120%;
+    line-height: 200%;
+}
+
+@media (min-width: 768px) {
+    .whySection {
+        padding: 75px;
+    }
+    .whySection > .heading {
+        padding: 0 50px;
+    }
+}
+
+.sourceLink {
+    text-transform: uppercase;
+    font-size: 85%;
+    color: #333;
+}

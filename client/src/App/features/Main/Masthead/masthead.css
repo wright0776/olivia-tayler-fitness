@@ -1,0 +1,71 @@
+/* Masthead */
+
+.masthead {
+  background-image: url('../../../../media/familyYoga1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 110vw;
+  background-position-y: -30px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.mastheadText {
+  background: #fff;
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  line-height: 1.5;
+  padding: 40px 20px;
+}
+
+.mastheadText > h1 {
+  font-size: 1em;
+  text-align: center
+}
+
+.subtext {
+  font-size: .6em;
+  line-height: 2.5;
+}
+
+.firstClass {
+  padding: 18px 24px;
+  background: #F29E42;
+  border-radius: 2px;
+  margin-top: 24px;
+}
+
+.otfitPhoto {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .masthead {
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+  }
+  .mastheadText {
+      background: transparent;
+  }
+}
+@media (min-width: 1024px) {
+  .masthead {
+      background: #fff;
+      justify-content: center;    
+  }
+  .otfitPhoto {
+      display: block;
+      height: 500px;
+  }
+  .mastheadText {
+      height: 500px;
+      width: 500px;
+  }
+}
