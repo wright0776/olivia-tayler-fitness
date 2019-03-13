@@ -7,20 +7,28 @@ function ClassSchedule() {
 
             <h2 className='title'>Class Schedule</h2>
 
+            <div className='reserve'>
+                <span>To reserve your spot in class, please rsvp via meetup or email me.</span>
+                <a target="_blank" href="https://www.meetup.com/Salt-Lake-City-Family-Yoga-Meetup/">www.meetup.com/Salt-Lake-City-Family-Yoga-Meetup</a>
+            </div>
+
             <div className='featureContent'>
 
-                <h3>Family Yoga</h3>
+                <div className='midsection'>
 
-                <p>Every other Monday beginning March 25, 2019.</p>
+                    <h3>Family Yoga</h3>
 
-                <ul>
-                    <li>March 25, 2019</li>
-                    <li>April 8, 2019</li>
-                    <li>April 22, 2019</li>
-                    <li>May 6, 2019</li>
-                    <li>May 20, 2019</li>
-                    <li>June 3, 2019</li>
-                </ul>
+                    <span>Every other Monday beginning March 25, 2019.</span>
+
+                    <ul>
+                        <li>March 25, 2019</li>
+                        <li>April 8, 2019</li>
+                        <li>April 22, 2019</li>
+                        <li>May 6, 2019</li>
+                        <li>May 20, 2019</li>
+                        <li>June 3, 2019</li>
+                    </ul>
+                </div>
 
                 <div className='addressContainer'>
 
